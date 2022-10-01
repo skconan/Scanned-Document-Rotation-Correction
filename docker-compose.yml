@@ -1,0 +1,8 @@
+version: '3'
+services:
+  api:
+    build: .
+    volumes:
+      - .:/rotation_correction_service
+    ports:
+     - "9000:9000"
