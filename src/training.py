@@ -88,7 +88,7 @@ def angle_error_regression(y_pred, y_true):
 if __name__ == '__main__':
     gpu_id = 0
     img_size = 128
-    batch_size = 128
+    batch_size = 256
     DATASET_DIR = './dataset'
 
     training_set_dir = os.path.join(
@@ -107,7 +107,7 @@ if __name__ == '__main__':
     print("Set device", device)
     print("Current GPU Id:", torch.cuda.current_device())
 
-    model = RotationNet(out_channels=64)
+    model = RotationNet(out_channels=64, n_fc=1)
     model = model.cuda()
     summary(model, (1, img_size, img_size))
 
