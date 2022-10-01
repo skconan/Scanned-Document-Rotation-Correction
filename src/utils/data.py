@@ -41,6 +41,13 @@ def img_transform(img):
     return img_pad, img.float()
 
 
+def img_transform_onnx(img):
+    img_pad = padding_to_128(img)
+    img = img_pad / 255.
+    img = img.astype('float32')
+    return img_pad, img.reshape(1, 1, 128, 128)
+
+
 def to_std_angle(angle):
     return angle - 90
 
