@@ -47,7 +47,7 @@ if __name__ == '__main__':
     ap.add_argument('-o', '--out_dir', type=str, required=False, help='Output Directory',
                     default='./testing_output')
     ap.add_argument('-m', '--model_path', type=str, required=False, help='Model weight Path',
-                    default='./models/model_rotation_net.onnx')
+                    default='./models/rotation_net.onnx')
 
     args = vars(ap.parse_args())
 

@@ -60,9 +60,9 @@ if __name__ == '__main__':
     ap.add_argument('-gpu_id', '--gpu_id', type=int, required=False, help='GPU ID. (-1 for CPU)',
                     default=0)
     ap.add_argument('-torch_w', '--torch_weight_path', type=str, required=False, help='Torch weight path',
-                    default='./models/model_rotation_net.pt')
+                    default='./models/rotation_net.pt')
     ap.add_argument('-onnx_w', '--onnx_weight_path', type=str, required=False, help='Output ONNX weight path',
-                    default='./models/model_rotation_net.onnx')
+                    default='./models/rotation_net.onnx')
     args = vars(ap.parse_args())
 
     gpu_id = args['gpu_id']
