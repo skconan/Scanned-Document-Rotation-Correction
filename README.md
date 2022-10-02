@@ -1,6 +1,6 @@
 # Scanned Document Rotation Correction
   
-  The project creates the models and service API for predicting scanned document images' angles ranging between -90° to 90° from the vertical (counter clockwise to clockwise).
+  The project creates the models and service API for predicting scanned document images' angles ranging between -90° (counter clockwise) to 90° (clockwise) from the vertical.
   
 ## Setup Environment For Model Training and Testing 
 
